@@ -179,8 +179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floor: {fileID: 8327174251991281829, guid: 3f69e6f111d0c448384162dc936695de, type: 3}
   wall: {fileID: 4157113941262713230, guid: 0560c5d00e3da419daaadb710cf9342e, type: 3}
-  width: 8
-  height: 8
+  width: 9
+  height: 9
   startX: 4
   startY: 2
 --- !u!1 &705507993

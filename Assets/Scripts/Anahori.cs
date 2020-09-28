@@ -9,19 +9,14 @@ public class Anahori : MonoBehaviour
     const int CHIP_NONE = 0;
     const int CHIP_WALL = 1;
 
-    int xStart;
-    int yStart;
-
     // Start is called before the first frame update
     void Start()
-    {        
-        //開始地点
-        xStart = 2;
-        yStart = 4;
+    { 
+
     }
 
     public void Create(Layer2D _layer, int width, int height, int x, int y){
-        _layer.Initialize(width + 1, height + 1);
+        _layer.Initialize(width, height);
         _layer.FillCellValue(CHIP_WALL);
 
         //穴掘り開始

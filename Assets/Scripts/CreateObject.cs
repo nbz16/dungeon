@@ -30,12 +30,13 @@ public class CreateObject : MonoBehaviour
             ana.Create(layer, width, height, startX, startY);
             values = layer.Values;
 
-            for(int y=0;y<width+1;y++){
-                for(int x=0;x<height+1;x++){
-                    if(values[y+x] == 1){
+            for(int y=0;y<height;y++){
+                for(int x=0;x<width;x++){
+                    
+                    if(values[y*height+x] == 1){
                         Instantiate(wall, new Vector3(x,0f,y), Quaternion.identity);
                     }
-                    else if(values[y+x] == 0){
+                    else if(values[y*height+x] == 0){
                         Instantiate(floor, new Vector3(x,0f,y), Quaternion.identity);
                     }
                 }
